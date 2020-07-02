@@ -33,6 +33,7 @@ public class MainDrive {
 			break;
 			
 		}else if(inputMenu == 1) {
+			addPhoneNumToFile();
 			
 		}else if (inputMenu == 2) {
 			
@@ -44,4 +45,19 @@ public class MainDrive {
 	}
 		
 	}
+	
+	public static void addPhoneNumToFile() {
+		
+		Scanner myScan = new Scanner(System.in);
+		
+		System.out.println("이름 입력: ");
+		String name = myScan.nextLine();
+		
+		System.out.println("전화번호 입력: ");
+		String phoneNum = myScan.nextLine();
+		
+		System.out.println("생년 입력: ");
+	    int birthYear = myScan.nextInt();
+	}
+	
 }
