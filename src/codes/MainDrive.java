@@ -10,6 +10,8 @@ import java.io.IOException;
 import java.util.Calendar;
 import java.util.Scanner;
 
+import codes.datas.User;
+
 public class MainDrive {
 	
 	public static void main(String[] args) {
@@ -80,11 +82,9 @@ public class MainDrive {
 				
 				int userBirthYear = Integer.parseInt(userInfos[2]);
 				
-				Calendar now = Calendar.getInstance();
+				User user = new User(userName, userPhoneNum, userBirthYear);
 				
-				int userAge = now.get(Calendar.YEAR) - userBirthYear + 1;
-			    String userInfoMessage = String.format("%s(%d세) : %s", userName, userAge, userPhoneNum);
-                System.out.println(userInfoMessage);
+				System.out.println(user);
 			}
 			br.close();
 			fr.close();
