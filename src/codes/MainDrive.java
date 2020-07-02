@@ -28,6 +28,18 @@ public class MainDrive {
 		System.out.println("메뉴 선택: ");
 		int inputMenu = myScan.nextInt();
 		
+		if(inputMenu == 0) {
+			System.out.println("전화번호부 종료합니다");
+			break;
+			
+		}else if(inputMenu == 1) {
+			
+		}else if (inputMenu == 2) {
+			
+		}else {
+			System.out.println("잘못된 입력입니다");
+			System.out.println("다시 입력해주세요");
+		}
 		
 	}
 		
